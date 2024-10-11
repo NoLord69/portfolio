@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Portfolio Description">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero animate__animated animate__fadeIn">
+        <h1>Hello, I'm Abhay Singh</h1>
+        <p>I'm a student at Chandigarh University.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>
+            I'm a passionate and motivated recent graduate with a strong foundation in computer science and software development. I have completed certifications in C++ with a focus on Data Structures and Algorithms, which has equipped me with the skills to approach complex problems logically and efficiently.
+        </p>
+        
+        <p>
+            Throughout my academic journey, I have developed a keen interest in various aspects of technology, particularly in:
+        </p>
+        <ul>
+            <li>Cloud Computing</li>
+            <li>Artificial Intelligence</li>
+            <li>Software Engineering</li>
+        </ul>
+    
+        <p>
+            My hands-on experience with cloud services like AWS and Azure has provided me with the practical knowledge to design and deploy scalable applications. Additionally, I have worked on several projects that showcase my ability to leverage cutting-edge technologies to solve real-world challenges.
+        </p>
+    
+        <p>
+            In addition to my technical skills, I pride myself on my strong communication and interpersonal skills. I believe that effective collaboration is essential in any project, and I have demonstrated my ability to work well in teams, often taking on leadership roles to guide my peers toward achieving common goals.
+        </p>
+    
+        <p>
+            I am constantly seeking to learn and grow, which drives my enthusiasm for tackling new challenges. Whether it's developing an AI-powered legal documentation system or creating a dynamic movie ticket pricing application, I approach each project with a focus on innovation and excellence. 
+            I am excited to connect with professionals in the tech industry, share my knowledge, and contribute to projects that push the boundaries of technology. If you are interested in collaborating or learning more about my work, feel free to reach out!
+        </p>
+    
+    </section>
+    
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project animate__animated animate__fadeIn">
+            <h3>Project 1</h3>
+            <p>Chatbot for Cloud Computing</p>
+            <a href="project1.html" class="project-link">View Details</a>
+        </div>
+        <div class="project animate__animated animate__fadeIn">
+            <h3>Project 2</h3>
+            <p>Encrypted Messaging App</p>
+            <a href="project2.html" class="project-link">View Details</a>
+        </div>
+        <div class="project animate__animated animate__fadeIn">
+            <h3>Project 3</h3>
+            <p> Movie Ticket Pricing System</p>
+            <a href="project3.html" class="project-link">View Details</a>
+        </div>
+
+         <div class="project animate__animated animate__fadeIn">
+                <h3>Project 4</h3>
+                <p>AI-Powered Legal Documentation System</p>
+                <a href="project4.html" class="project-link">View Details</a>
+            </div>
+       
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me at: <strong>abhaysingh182101@gmail.com</strong></p>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 [Abhay]. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionPosition = section.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.5;
+                if (sectionPosition < screenPosition) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
